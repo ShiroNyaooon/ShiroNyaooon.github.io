@@ -1,0 +1,141 @@
+/*****************************************************
+	汎用スタイル	by.Shiro	Upd.2021/07/01
+******************************************************/
+/*****************************************************
+	幅
+******************************************************/
+.width100 {
+	width: 100%;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.cwidth {
+	text-align: center;
+}
+
+.lwidth {
+	text-align: left;
+}
+
+.rwidth {
+	text-align: right;
+}
+
+/*****************************************************
+	余白	上 | 右 | 下 | 左
+******************************************************/
+.margin5px {
+	margin: 5px;
+}
+
+.margin10px {
+	margin: 10px;
+}
+
+.margin20_0_0_0 {
+	margin: 20px 0px 0px 0px;
+}
+
+.margin20_0_30_0 {
+	margin: 20px 0px 30px 0px;
+}
+
+.margin50_0_0_0 {
+	margin: 50px 0px 0px 0px;
+}
+
+.margin50_0_50_0 {
+	margin: 50px 0px 50px 0px;
+}
+
+
+/*****************************************************
+	余白	上 | 右 | 下 | 左
+******************************************************/
+.padding_top0 {
+	padding-top: 0px;
+}
+
+.padding_bottom0 {
+	padding-bottom: 0px;
+	
+    padding-bottom: 0px;
+
+}
+
+
+/*****************************************************
+	罫線
+******************************************************/
+.border0top {
+	border-top-style: hidden;
+}
+
+.border0bottom {
+	border-bottom-style: hidden
+}
+
+
+
+
+/*****************************************************
+	文字
+******************************************************/
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.colorRed {
+	color: red;
+}
+
+
+
+
+
+
+/*****************************************************
+	画像
+******************************************************/
+.imgWidth100{
+	width: 100%;
+}
+
+
+
+
+
+
+#jumbotron {/*親div*/
+  position: relative;/*相対配置*/
+  }
+
+#jumbotron H1 {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 10px;
+  right: 20px;
+  }
+
+#jumbotron p {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 0;
+  right: 30;
+}
+
+#jumbotron_back{
+	width: 100%;
+}
+
+
+
+#jumbotron_title{
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 10px;
+  right: 20px;
+}
