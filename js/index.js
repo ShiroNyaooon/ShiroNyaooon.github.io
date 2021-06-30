@@ -13,11 +13,18 @@ $(function(){
 		}
     });
 	
+	// 画面スクロールイベント時
 	$(window).scroll(function() {
-    	OpacityAnimation();
+		
+		// 画面が小さい時はアニメーションOFF
+		if($(window).width() >= 640) {
+			OpacityAnimation();
+		} else {
+			$(".fuwaxtu").css("opacity", "1");
+		}
+    	
 	});
 });
-
 
 
 // 画面スクロールや画面リサイズ時に呼び出すと
@@ -25,7 +32,7 @@ $(function(){
 // 指定した項目(classやImgとか)が
 // 画面外に出れば、フワッって消えて
 // 画面内に入れば、フワッって表示します
-// お試し版なので、単純な動きです
+// お試し版なので、単純な動きです。少し改良版。
 function OpacityAnimation() {
 	
 	let scrollY1 = $(window).scrollTop();
@@ -37,9 +44,13 @@ function OpacityAnimation() {
 		let objY2 = $(this).height() + objY1;
 		
 		if( scrollY1 <= objY2 && objY1 <= scrollY2) {
-			$(this).stop().animate({"opacity":"1"});
+			if ( $(this).css("opacity") !== "1" ) {
+				$(this).stop().animate({"opacity":"1"});
+			}
 		} else {
-			$(this).stop().animate({"opacity":"0"});
+			if ( $(this).css("opacity") !== "0" ) {
+				$(this).stop().animate({"opacity":"0"});
+			}
 		}
 	});
 }
